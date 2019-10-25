@@ -1,0 +1,649 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*ol, ul {
+	list-style: none;
+}*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none; /*隱藏超連結底線*/
+}
+
+/* ------------------------ CSS Reset ------------------------ */
+
+
+*{  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+  font-family: "Microsoft JhengHei";
+}
+
+
+/* ------------------------ Body starts --------------------- */
+
+.header{
+	position :relative;
+}
+
+
+.box{
+	height: 70px;
+	width: 1024px;
+	background: rgba(74,74,74,0.5);
+	display: block;
+	position: absolute;
+	z-index: 10;
+}
+
+.header img{
+	position :relative;
+	z-index: 1;
+
+}
+
+.header h6{
+
+
+}
+
+.header h6 a {
+	width: 255px;
+	height: 70px;
+	background-image: url(https://upload.cc/i1/2019/09/04/3lIP0Y.png); 
+	background-position:50% 50%;
+	background-repeat: no-repeat; 
+	display: block;
+	text-indent: 110%;
+	overflow: hidden; /*超出區域即隱藏 h1 字元*/
+	white-space: nowrap; /*文字不要斷行*/
+	position: absolute;
+	z-index: 29;
+}
+
+
+.menu {
+	float: right;
+	position: absolute;
+	z-index: 27;
+	top: 12px;
+	right: 8px;
+	list-style: none;
+}
+
+.menu li {
+	float: left;
+	margin-right: 40px;
+}
+
+.menu a {
+	color: #FFF;
+	padding: 17px 15px;
+	display: block; 
+ }
+
+.menu a:hover {
+	border-bottom: 7px solid #00cc99;
+	color: #00cc99;
+}
+
+
+.banner {
+	font-size: 37pt;
+	font-weight: bold;
+	color:#00cc99;
+	line-height: 1.5;
+	margin: 120px 0px 0px 40px;
+	position: absolute;
+	z-index: 28;
+	top: 60px;
+}
+
+
+.banner h1 span{
+	color: #FFF;
+}
+
+
+.button {
+	font-size: 12pt;
+	color: #FFF;
+	background: #00cc99;
+	padding: 12px 90px 12px 40px;
+	border-radius:5px; /*邊界半徑*/
+	background-image: url(https://upload.cc/i1/2019/09/05/vrS3t5.png); 
+	background-position:80% 50%;
+	background-repeat: no-repeat; 
+	position: absolute;
+	z-index: 27;
+	margin-top: 50px;
+}
+
+/*------------------------- header end -----------------------*/
+
+.footer {
+	background: #323228;
+	padding: 20px 0px;
+}
+
+.footer h6 a {
+	width: 174px;
+	height: 46px;
+	background-image: url(https://upload.cc/i1/2019/09/04/3lIP0Y.png);
+	margin: 8px 0px 0px 40px; 
+ 	/*background-position: 4% 90%; 背景圖案位子移動 上下 左右 */ 
+	background-repeat: no-repeat; 
+	display: block;
+	text-indent: 110%;
+	overflow: hidden; /*超出區域即隱藏 h1 字元*/
+	white-space: nowrap; /*文字不要斷行*/
+}
+
+.footer p {
+	margin: 0px 0px 0px 74px;
+	display: block;
+}
+
+.Fanpage {
+	float: right;
+ 	margin: -42px 24px 0px 0px;
+}
+
+.Fanpage li {
+	list-style: none;
+	float: left;
+	margin-right: 36px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/*------------------------- footer end -----------------------*/
+
+h1 {
+	font-size: 36pt;
+	color: #00cc99;
+}
+
+
+h1 span {
+	font-size: 36pt;
+	color: #fff;
+}
+
+
+h2 {
+	font-size: 24pt;
+	color: #00cc99;
+	font-weight: bolder;
+/*	margin: 0px 10px;*/
+}
+
+h2 span{
+	font-size: 14pt;
+	color: #9b9b9b;
+	margin: 0px 10px;
+}
+
+h3 {
+	font-size: 18pt;
+}
+
+h4 {
+	font-size: 16.4pt;
+	color: #00cc99;
+}
+
+
+p {
+	font-size: 12pt;
+	color: #9b9b9b;
+}
+
+p span{
+	font-size: 14pt;
+	color: #000;
+/*	margin: 0px 10px;*/
+}
+
+
+
+/*------- text setting end ----------------------*/
+/*--------index_content -------------------------*/
+
+.content {
+	margin: 40px 30px 0px 30px;
+}
+
+
+.intro {
+	margin: 30px 0px;
+	box-sizing: border-box;
+}
+
+.intro a {
+	display: block;
+	text-align: center;
+	cursor: context-menu; /*選單 Opera*/
+}
+
+
+.choice .more {
+	float:right;
+	font-size: 12pt;
+	color: #00cc99;
+	border: 2px solid #00cc99;
+	padding: 5px 10px;
+	border-radius:5px; /*邊界半徑*/
+	cursor: pointer; /*滑鼠游標變成手指*/
+}
+
+.intro h4 {
+	padding-top: 20px;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 24pt;
+	color: #969696;
+}
+
+.intro p {
+	padding-top: 10px;
+	text-align: left;
+	line-height: 20pt;
+	text-align: center;
+}
+
+.course {
+	margin: 30px 0px 30px 0px;
+	list-style: none;
+}
+
+
+
+.course1 {
+	width: 304px;
+	float: left;
+	box-sizing: border-box;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+    padding: 30px 20px;
+	border-radius:5px; /*邊界半徑*/
+}
+
+
+.course2 {
+	width: 304px;
+    float: left;
+    box-sizing: border-box;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+    padding: 30px 20px;
+	margin: 0 25px;
+	border-radius:5px; /*邊界半徑*/
+}
+
+
+.course3 {
+	width: 304px;
+    float: left;
+    box-sizing: border-box;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
+    padding: 30px 20px;
+	border-radius:5px; /*邊界半徑*/
+}
+
+
+/*--------index_online_vs_offline ------------------*/
+
+.online_vs_offline{
+	margin: 60px 0px 60px 0px;
+}
+
+.items{
+	text-align:center;
+	margin: 30px 0px 30px 0px;
+}
+
+.td1, .td4 {
+	width: 200px;
+
+}
+
+.td2 {
+	width: 312px;
+}
+
+.items th{
+	padding: 16px 0px 16px 0px;
+	text-align: center;
+	font-weight: bold;
+	background: #ebebeb;
+	vertical-align:middle;
+}
+
+.items td{
+	border-bottom: 1px solid #ebebeb;
+	padding: 16px 0px 16px 0px;
+	vertical-align:middle;
+}
+
+.items td span{
+	color: #42b392;
+}
+
+
+/*--------index_subscribe -------------------------*/
+
+.subscribe {
+	padding: 120px 50px 50px 50px;
+	background: #ebebeb;
+	margin-top: 30px;
+	position :relative;
+}
+
+
+.subscribe h3{
+	font-weight: bold;
+	line-height: 36pt;
+}
+
+.Indentation {
+	font-weight: bold;
+	line-height: 36pt;
+	margin: -10px 0px 50px 110px;
+}
+
+
+
+.subscribe a {
+	position: absolute;
+	top:110px;
+	left: 650px;
+}
+
+
+.message {
+	font-size: 12pt;
+	padding-top: 10px;
+	padding-left:12px;
+	margin: 3px 3px 20px 0px;
+	display: block;
+	border-radius:3px; /*邊界半徑*/
+	border: none;
+	color: #000;
+}
+
+
+.data {
+	float: right;
+	margin-top: -110px;
+}
+
+.data label {
+	color: #FFF;
+	font-weight: bolder;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.data input {
+	width: 446px;
+	height: 50px;
+	font-size: 12pt;
+	padding-left:12px;
+	margin: 3px 3px 20px 0px;
+	display: block;
+	border-radius:3px; /*邊界半徑*/
+	border: none;
+	color: #000;
+}
+
+.data input.Send {
+	width: 110px;
+	height: 50px;
+	background: #00cc99;
+	color: #FFF;
+	font-size: 12pt;
+	border: none;
+	float: right;
+	display: block;
+}
+
+
+.Send:hover {
+  	cursor: pointer; /*滑鼠滑過時鼠標變成手指*/
+}
+
+
+/*--------index_course_subscribe -------------------------*/
+
+
+.summary {
+	margin: 0px auto;
+}
+
+.teacher {
+  	margin: 30px 160px 80px 160px;
+  	list-style: none;
+}
+
+.teacher ul{
+	float: right;
+
+}
+
+
+.teacher img {
+	margin:20px;
+}
+
+
+.teacher h2 {
+	margin: -180px 0px 0px 280px;
+	line-height: 38pt;
+}
+
+.Introduction {
+	margin: -96px 40px 0px 0px;
+	list-style: disc; /*實心圓形*/
+	color: #969696;
+	line-height: 18pt;
+}
+
+.Introduction span{
+	margin-left: 20px;
+}
+
+/*--------index_course_Special_course -------------------*/
+
+
+.Special_course{
+  	margin: 30px 160px;
+}
+
+.special{
+	margin: 30px 0px 30px 20px;
+
+}
+
+.special li p{
+	color: #000;
+	margin: 0px 10px;
+	line-height: 20pt;
+}
+
+
+/*--------index_course_contents -------------------------*/
+
+
+.contents{
+  	margin: 30px 160px;
+}
+
+
+.range{
+	width: 704px;
+	margin: 30px 0px 60px 0px;
+}
+
+
+.range th{
+	text-align: left;
+	padding: 16px 0px 16px 40px;
+	font-weight: bold;
+	background: #ebebeb;
+
+}
+
+.range td{
+	padding: 16px 0px 16px 40px;
+	background-color: #ebebeb;
+}
+
+.range .ranges{
+	color: #969696;
+	background-color: #FFF;
+}
+
+
+/*--------index_fqa_banner ---------------------------*/
+
+
+.banners{
+    text-align: center;
+    font-size: 37pt;
+    font-weight: bold;
+    color: #00cc99;
+    line-height: 1.5;
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    z-index: 28;
+}
+
+
+.banners h1 span{
+	color: #FFF;
+}
+
+.search input{
+	width: 600px;
+	height: 50px;
+	font-size: 18pt;
+	border: none;
+	background-image: url(https://upload.cc/i1/2019/09/04/MHsJ9U.jpg); 
+	background-position:98% 50%;
+	background-repeat: no-repeat; 
+	border-radius:3px; /*邊界半徑*/
+	padding-left: 10px;
+
+}
+
+
+
+/*--------index_fqa_contents -------------------------*/
+
+
+.fqa{
+	margin: 50px 130px;
+
+}
+
+
+.fqa p, .fqa p span, .fqa li{
+	line-height: 22pt;
+
+}
+
+
+.general{
+	margin: 40px 0px;
+}
+
+
+.pay{
+	margin: 40px 0px;
+
+}
+
+
+.refund{
+	margin: 40px 0px;
+
+}
+
+
+.spacing{
+	margin: 30px 0px;
+	list-style: none;
+}
+
+.installment {
+	margin-left: 50px;
+	color: #969696;
+}
+
+.installment span{
+	margin-left: 20px;
+}
+
+
+.Refund{
+/*	margin-left: -20px;*/
+	color: #969696;
+	list-style: disc; /*實心圓形*/
+}
+
+
+.Refund li{
+	text-indent : 3em;
+}
+
+.Refund li span{
+	margin-left: 20px;
+}
